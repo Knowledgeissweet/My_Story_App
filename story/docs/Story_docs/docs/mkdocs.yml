@@ -1,0 +1,29 @@
+site_name: My Docs
+
+nav:
+    - Home: index.md
+    - Django tutorial:
+        - Story App: storyapp.md
+
+
+extra_css:
+    - css/extra.css
+theme:
+    name: readthedocs
+    locale: en
+    analytics: {gtag: 'G-274394082'}
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+      
+markdown_extensions:
+    - toc:
+        permalink: 
+    - admonition
+    - attr_list
+    - def_list
+    - md_in_html
+    - mdx_gh_links:
+        user: mkdocs
+        repo: mkdocs

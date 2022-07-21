@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Outline - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Outline";
+        var mkdocs_page_input_path = "outline.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/django.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-274394082"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-274394082');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Outline</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-up-your-development-workstation">Setting Up your Development Workstation</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Outline</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="creating-a-story-app">Creating a Story App<a class="headerlink" href="#creating-a-story-app" title="Permanent link"></a></h1>
+<p>In this tutorial, you learn to create a simple story app that allows you the following functionalities:</p>
+<ol>
+<li>A public site that allows you to search stories, and view them by their categories, tags, and slug.</li>
+<li>An admin site that lets you add, change, and delete stories, categories and tags.</li>
+</ol>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link"></a></h2>
+<p>This tutorial is for beginners to the Django framework—although not for absolute beginners. If this is your first attempt at Django, I will strongly recommend perusing first <a href="https://docs.djangoproject.com/en/4.0/intro/tutorial01/">the Django tutorial</a> as it is more detailed. It will help you get familiar with the framework before you try out your hand on other fun/practice projects.</p>
+<p>The following prerequites are also required:</p>
+<ol>
+<li>
+<p>Comfortable using the command line</p>
+</li>
+<li>
+<p>Installation of Python3, preferably version 3.8 and above.</p>
+</li>
+<li>
+<p>An understanding of the OOP(Object-oriented programming) paradigm.</p>
+</li>
+</ol>
+<h2 id="setting-up-your-development-workstation">Setting Up your Development Workstation<a class="headerlink" href="#setting-up-your-development-workstation" title="Permanent link"></a></h2>
+<p>In this tutorial, we would be setting up our Django project in a virtual environment—inline with best practices.</p>
+<p>Navigate to your working directory—using command line/powershell—on your local machine and carry out the following instructions.</p>
+<ol>
+<li>
+<p>Create a new virtual environment</p>
+</li>
+<li>
+<p>Enter the virtual environment</p>
+</li>
+<li>
+<p>Activate the virtual environment</p>
+</li>
+</ol>
+<p>It should appear similar to this in your command line:</p>
+<pre><code>.../&gt; virtualenv &lt;name&gt; 
+.../&gt; cd &lt;name&gt;
+.../&lt;name&gt;/&gt; scripts/activate
+</code></pre>
+<p>Now, install the following:</p>
+<ul>
+<li><a href="https://docs.djangoproject.com/en/4.0/intro/install/">Django</a></li>
+<li><a href="https://django-taggit.readthedocs.io/en/latest/getting_started.html">Django-taggit</a></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This tutorial is written based on the lastest Django version at the time, which is version 4.0.6. For the purpose of this tutorial, I will advise you install this version.</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Ensure your virtual environment is activated when installing Django-taggit. Failure to do so might trigger a <code>ModuleNotFoundError: No module named 'taggit'</code> when making migrations later on in the project.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
