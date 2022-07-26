@@ -224,15 +224,12 @@ urlpatterns = [
 
 At this point, you should be able to create instances of your models from within your admin. 
 
-<figure markdown align="center">
   ![Creating categories](img/Screenshot%20(72).png)
   <figcaption><i>Creating categories</i></figcaption>
-</figure>
 
-<figure markdown align="center">
   ![Creating categories](img/Screenshot%20(74).png)
   <figcaption><i>Creating stories</i></figcaption>
-</figure>
+
 
 Go ahead and create instances of your model classes. The data from this exercise will come handy when writing our views.
 
