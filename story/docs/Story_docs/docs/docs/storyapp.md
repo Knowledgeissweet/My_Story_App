@@ -46,8 +46,7 @@ Now, install the following:
   
 > :information_source: **Info**: This tutorial is written based on the lastest Django version at the time, which is version 4.0.6. For the purpose of this tutorial, I will advise you install this version.
 
-> ⚠️ **Caution
-    Ensure your virtual environment is activated when installing Django-taggit. Failure to do so might trigger a `ModuleNotFoundError: No module named 'taggit'` when making migrations later on in the project.
+> ⚠️ **Caution**: Ensure your virtual environment is activated when installing Django-taggit. Failure to do so might trigger a `ModuleNotFoundError: No module named 'taggit'` when making migrations later on in the project.
 
 With out development environment set up, let's create our django project.
 
@@ -73,8 +72,7 @@ storybook     <!--name of the project created (outer directory)-->
             __init__.py
 ```
 
-!!! info
-    You can run the `python manage.py runserver` to confirm your project is well set-up. The development server should run in your browser. You should see a rocket shooting flames downward about to take off, and a bold message: The install worked successfully! Congratulations!
+> ℹ️ **Info**: You can run the `python manage.py runserver` to confirm your project is well set-up. The development server should run in your browser. You should see a rocket shooting flames downward about to take off, and a bold message: The install worked successfully! Congratulations!
 
 ## Creating an App
 
@@ -101,8 +99,7 @@ story
 
 With that done, we would update `INSTALLED_APPS` within our `settings.py` to notify Django about our newly created app.
 
-!!! Info
-    Recall we installed Django-taggit at the beginning of the tutorial? We need the plugin for creating and managing our story tags. Alongside your app, add `taggit` to `INSTALLED_APPS`.
+> ℹ️ **Info**: Recall we installed Django-taggit at the beginning of the tutorial? We need the plugin for creating and managing our story tags. Alongside your app, add `taggit` to `INSTALLED_APPS`.
 
 ```
  <!--storybook/settings.py  -->
@@ -135,8 +132,7 @@ Having done that, now we can run our first migrations. These commands creates a 
 .../> python manage.py migrate
 ```
 
-!!! note
-    When working on your own, you can decide to modify your url files much later on after making migrations or even after you've created some models and views. The order doesn't matter.
+> 🗒️ **Note**: When working on your own, you can decide to modify your url files much later on after making migrations or even after you've created some models and views. The order doesn't matter.
 
 ## Creating Models
 
@@ -222,12 +218,7 @@ urlpatterns = [
 ```
 
 
-!!! note
-    You won't be able to view your admin if haven't created your user yet. To create a user, run this command in your command line:`python manage.py createsuperuser`.
-
-    Thereafter, you should be able to login from your local domain using this url: `http://127.0.0.1:8000/admin/`.
-
-    You should be able to see your Story app, alongside the models, displayed on the admin page on login.
+> 🗒️ **Note**: You won't be able to view your admin if haven't created your user yet. To create a user, run this command in your command line:`python manage.py createsuperuser`. Thereafter, you should be able to login from your local domain using this url: `http://127.0.0.1:8000/admin/`. You should be able to see your Story app, alongside the models, displayed on the admin page on login.
 
 ## Creating Objects
 
@@ -288,8 +279,7 @@ def story_list(request):
 
 If have not done so before, go ahead and create a templates directory in your story app. Then, create a sub-directory with the name, "story", in your templates directory.
 
-!!! caution
-    Make sure your templates directory's name is "templates". This is line with best practice when using Django for web applications. The Django engine knows automatically to look into your templates directory to discover your template files.
+> ⚠️ **Caution**: Make sure your templates directory's name is "templates". This is line with best practice when using Django for web applications. The Django engine knows automatically to look into your templates directory to discover your template files.
 
 Having done that we would create a `base.html` template. This will hold `nav` and `footer` since we expect both to repeat across all pages on our website.
 
@@ -390,10 +380,7 @@ Now, modify it to reflect this:
 
 {% endblock body %}
 ```
-!!! info
-    The `get_absolute_url` function in the template might trigger an error. That is because we have not defined the function yet. 
-    
-    Don't worry. We would get to it shortly.
+> ℹ️ **Info**: The `get_absolute_url` function in the template might trigger an error. That is because we have not defined the function yet. Don't worry. We would get to it shortly.
 
 The `story_list.html` template allows us to view and search the story list, but it doesn't allow us to view each story's details (story body).
 
@@ -512,12 +499,3 @@ Keep up the coding spirit!
 
 
 
-
-
-
-
-
-
-
-
- <!--  -->
