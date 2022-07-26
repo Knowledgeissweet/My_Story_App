@@ -44,7 +44,7 @@ Now, install the following:
 - [Django](https://docs.djangoproject.com/en/4.0/intro/install/)
 - [Django-taggit](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
   
-:info:
+**Note**
     This tutorial is written based on the lastest Django version at the time, which is version 4.0.6. For the purpose of this tutorial, I will advise you install this version.
 
 !!! caution
