@@ -433,7 +433,7 @@ Having done that, modify the template to reflect this:
 
 We have a template for our story details. Consequently, we need to create a corresponding function view for it.
 
-Now, modify your `views.py` to reflect this:
+Now, modify your `views.py` to include this:
 
 ```
 
@@ -461,7 +461,7 @@ def story_detail(request, id):
 
 In the Story model, we would define a function that allows us to view the details of each story when we click each story in the story list.
 
-In your `models.py`, modify your Story model to reflect this:
+In your `models.py`, modify your Story model to include this:
 
 ```
 <!-- story/models.py -->
